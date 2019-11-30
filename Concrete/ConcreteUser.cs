@@ -6,7 +6,7 @@ public class ConcreteUser : User
     private string _message;
 
 
-    private string _observerState;
+    private string _observerState = "No state";
 
     private ConcreteChatRoom _concreteChatRoom;
 

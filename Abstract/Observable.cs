@@ -4,18 +4,18 @@ using System.Linq;
 //This is the observable
 public abstract class ChatRoom
 {
-    private List<User> _users = new List<User>();
-    public void Attach(User user)
+    private List<ConcreteUser> _users = new List<ConcreteUser>();
+    public void Attach(ConcreteUser user)
     {
         _users.Add(user);
     }
 
-    public void Detatch(User user)
+    public void Detatch(ConcreteUser user)
     {
         _users.Remove(user);
     }
 
-    public void Notify()
+    private void Notify()
     {
         foreach (User q in _users)
             q.Update();
@@ -23,6 +23,6 @@ public abstract class ChatRoom
 
     public ConcreteUser GetUser(string userName)
     {
-        return _users.Where(q => q.Name).FirstOrDefault();
+        return _users.Where(q => q.Name == userName).FirstOrDefault();
     }
 }

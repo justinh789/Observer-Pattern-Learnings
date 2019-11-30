@@ -6,7 +6,7 @@ namespace Observer_Pattern.Concrete
 {
     public class ConcreteChatRoom : ChatRoom
     {
-        private string state;
+        private string state = "No state";
 
         public string State
         {
