@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>Observer_Pattern</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Core %28 POCO %29\" />
+  </ItemGroup>
+
+</Project>
